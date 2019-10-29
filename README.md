@@ -32,7 +32,7 @@
   
      
 
-+ You can check this project online [here](https://pitchingappganza.herokuapp.com)
++ You can check this project online [here]()
 
 ## Known bugs
 
