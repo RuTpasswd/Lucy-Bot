@@ -34,4 +34,8 @@ class TwitterStreamer:
     class for streaming and processing live tweets
     """
 
-   
+    # instantiateing the auth class
+    def __init__(self):
+        self.twitter_authenticator = TwitterAuthenticator()
+    # function to catch streamed tweets
+    
