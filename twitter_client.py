@@ -19,3 +19,9 @@ class TwitterClient:
         for tweet in Cursor(self.twitter_client.user_timeline, id = self.twitter_user).items(num_tweets):
             tweets.append(tweet)
         return tweets
+
+    def friend_list(self, num_friends):
+        friend_list = []
+        for friend in Cursor(self.twitter_client.friends, id = self.twitter_user).items(num_friends):
+            friend_list.append(friend)
+        return friend_list
