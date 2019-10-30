@@ -13,3 +13,9 @@ class TwitterClient:
 
     def get_twitter_client_api(self):
         return self.twitter_client
+
+    def get_user_timeline_tweets(self, num_tweets):
+        tweets = []
+        for tweet in Cursor(self.twitter_client.user_timeline, id = self.twitter_user).items(num_tweets):
+            tweets.append(tweet)
+        return tweets
