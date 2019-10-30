@@ -8,4 +8,7 @@ class TwitterListener(StreamListener):
     """
     Basic listener class which prints received tweets
     """
-   
+    def __init__(self, fetched_tweets_filename):
+        self.fetched_tweets_filename = fetched_tweets_filename
+
+    
