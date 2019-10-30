@@ -51,4 +51,5 @@ if __name__ == "__main__":
     hash_tag_list = ["Arsenal", "Xhaka", "Emery"]
     fetched_tweets_filename = "tweets.json"
 
+    twitter_streamer = TwitterStreamer()
     
