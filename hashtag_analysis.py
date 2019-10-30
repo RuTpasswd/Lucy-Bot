@@ -38,4 +38,9 @@ class TwitterStreamer:
     def __init__(self):
         self.twitter_authenticator = TwitterAuthenticator()
     # function to catch streamed tweets
-    
+    def stream_tweets(self, fetched_tweets_filename, hash_tag_list):   
+        listener = TwitterListener(fetched_tweets_filename)
+        auth = self.twitter_authenticator.authenticate_twitter() 
+        stream = Stream(auth, listener)
+
+       
