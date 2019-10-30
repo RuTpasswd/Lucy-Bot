@@ -43,4 +43,5 @@ class TwitterStreamer:
         auth = self.twitter_authenticator.authenticate_twitter() 
         stream = Stream(auth, listener)
 
-       
+        # to filter the stream
+        stream.filter(track=hash_tag_list)
