@@ -27,3 +27,11 @@ class TwitterListener(StreamListener):
         if status == "420":
             # returning false incase rate limit is reached
             return False
+
+# class for streaming the tweets based on our needs
+class TwitterStreamer:
+    """
+    class for streaming and processing live tweets
+    """
+
+   
