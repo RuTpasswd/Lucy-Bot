@@ -1,5 +1,5 @@
 from tweepy import Cursor, API
-
+from auth import TwitterAuthenticator
 
 # twitter client
 class TwitterClient:
