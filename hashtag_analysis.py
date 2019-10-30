@@ -45,3 +45,10 @@ class TwitterStreamer:
 
         # to filter the stream
         stream.filter(track=hash_tag_list)
+
+if __name__ == "__main__":
+    # how do I deal with the data
+    hash_tag_list = ["Arsenal", "Xhaka", "Emery"]
+    fetched_tweets_filename = "tweets.json"
+
+    
