@@ -40,11 +40,11 @@ def reply_to_tweets():
         store_last_seen_id(last_seen_id, FILE_NAME)
         mention_list = mention.full_text.lower().split(" ")
         print(mention.full_text.lower())
-        if mention_list[2] == "#dict":
+        if mention_list[1] == "#dict":
             print('found #dict!', flush=True)
             print('responding back...', flush=True)
 
-            word = mention_list[3]
+            word = mention_list[2]
             close = get_close_matches(word, data.keys(), cutoff=0.7)
             if word in data:
                 for w in data[word]:
@@ -57,13 +57,13 @@ def reply_to_tweets():
                 api.update_status('@' + mention.user.screen_name +
                     "Didn't quite get that, sorry", mention.id)
         
-        elif mention_list[2] == "#meme":
+        if mention_list[1] == "#meme":
             print('found #dict!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
                     " Your mum gei", mention.id)
 
-        elif mention_list[2] == "#kanye" or mention_list[2] == "#kanyewest" or mention_list[2] == "#ye":
+        if mention_list[1] == "#kanye" or mention_list[1] == "#kanyewest" or mention_list[1] == "#ye":
             print('found match!', flush=True)
             print('responding back...', flush=True)
             api.update_status('@' + mention.user.screen_name +
