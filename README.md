@@ -2,41 +2,54 @@
 
 ## Description
 
- 
+This is a Twitter bot with Lucy as a name.
 
-### User stories:
 
-+ User are allowed to:
+## User stories:
+
++ User communicating with Lucy:
+
+  * Lucy will automatically reply to every hashtag containing #meme
+  * Lucy will analyse tweets with sentiment analysis
+  * Lucy will produce a graph to represent the result
+  * Lucy is able to update a status
+  * Lucy is able to upload a picture
+
 
 
    
   
 ## Behavior Driven Development
 
-| Input                | Behaviour                       | Output              |
-| ---------------------| ------------------------------  | ------------------- |
-|                      |                                 |                     |
-|                      |                                 |                     |
-|                      |                                 |                     | 
-|                      |                                 |                     |
-|                      |                                 |                     |
+| Input                     | Behaviour                       |       Output                      |
+| ------------------------- | ------------------------------  | ----------------------------------|
+| Tweeting Lucy account     | Lucy replying the tweet         | Display the tweet tweeted by lucy |
+|                           |                                 |                                   |
+|                           |                                 |                                   | 
+|                           |                                 |                                   |
+|                           |                                 |                                   |
+
 
 ## Built with
 
-    - Python 3.6
+    - Python 3
+    - Tweepy (Python wrapper for the Twitter API.)
+    - 
    
 
 
 ## Installation
 
-  
-     
++ Find all requirements in [requirements](requirements.txt) file and install it. 
++ Create a folder and change directory to it   
++ Clone Lucy-bot repo at https://github.com/RuTpasswd/Lucy-Bot
++ 
 
-+ You can check this project online [here]()
+    *  You can check this project online [here]()
 
 ## Known bugs
 
-There are no known bugs up to now.
+For now the .
 
 ## Author
 
