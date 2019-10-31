@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import os 
 
-url = 'https://www.memedroid.com'
+url = 'https://www.memedroid.com/memes/random'
 
 page = requests.get(url)
 soup = bs(page.text, 'html.parser')
@@ -21,7 +21,7 @@ for image in image_tags:
         url = image['src']
         source = requests.get(url)
         if source.status_code == 200:
-            with open('model-'+ str(x) + '.jpeg', 'wb') as f:
+            with open('meme-'+ str(x) + '.jpeg', 'wb') as f:
                 f.write(requests.get(url).content)
                 f.close()
                 x+=1
