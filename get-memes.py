@@ -1,36 +1,27 @@
-# model scraping for themodelbot
-
 import requests
 from bs4 import BeautifulSoup as bs
 import os 
 
-#website with model images
-url = 'https://www.memedroid.com'
+url = 'https://www.memedroid.com/memes/random'
 
-# download page for parsing
 page = requests.get(url)
 soup = bs(page.text, 'html.parser')
 
-# locate all elements with image tag
 image_tags = soup.findAll('img')
 
-# create a directory for model images
-if not os.path.exists('models'):
-    os.makedirs('models')
+if not os.path.exists('memes'):
+    os.makedirs('memes')
 
-# move to a new diectory
-os.chdir('models')
+os.chdir('memes')
 
-# image file name variable
 x = 0
 
-# writing images
 for image in image_tags:
     try:
         url = image['src']
         source = requests.get(url)
         if source.status_code == 200:
-            with open('model-'+ str(x) + '.jpeg', 'wb') as f:
+            with open('meme-'+ str(x) + '.jpeg', 'wb') as f:
                 f.write(requests.get(url).content)
                 f.close()
                 x+=1
