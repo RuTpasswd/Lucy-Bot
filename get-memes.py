@@ -9,8 +9,8 @@ soup = bs(page.text, 'html.parser')
 
 image_tags = soup.findAll('img')
 
-if not os.path.exists('models'):
-    os.makedirs('models')
+if not os.path.exists('memes'):
+    os.makedirs('memes')
 
 os.chdir('memes')
 
