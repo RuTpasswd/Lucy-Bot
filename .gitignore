@@ -1,4 +1,5 @@
 run.sh
+analysis.sh
 venv
 .vscode
 *__pycache__

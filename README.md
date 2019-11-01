@@ -89,7 +89,10 @@ Project Lucy is basically a collection of programs which interact with the Twitt
 
 In any case do not hesitate to reach the team at:
 * murerwacollins@gmail.com
-
+* ganzamick@gmail.com
+* titusouko@gmail.com
+* Official1offmark@gmail.com
+* 7248zack@gmail.com
 
  ## Licence
 
