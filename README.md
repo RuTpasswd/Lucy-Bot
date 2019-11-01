@@ -71,7 +71,9 @@ Project Lucy is basically a collection of programs which interact with the Twitt
 ![alt text](figures/Figure_2.png)
 
 ##### Testing both most liked and retweeted last 200 tweets of @realDonaldTrump
-![alt text](figures/Figure_3.png)
+![alt text](figures/sc.png)
+
+##### Testing both most liked and retweeted last 200 tweets of @realDonaldTrump
 
 ## Known bugs
 
